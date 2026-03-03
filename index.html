@@ -43,7 +43,7 @@
     document.head.appendChild(ys);
   })(window, 'Genesys', 'https://apps.mypurecloud.de/genesys-bootstrap/genesys.min.js', {
     environment: 'prod-euc1',
-    deploymentId: '40de1924-9305-42aa-a027-d94af528b1bd'
+    deploymentId: 'a0f1c033-8da4-4d88-a970-c21560582708'
   });
   
   function toggleMessenger() {
@@ -68,9 +68,13 @@
             Genesys("command", "Database.set", {
                 messaging: {
                     customAttributes: {
-                        name: "Homer Simpson",
+                        name: "GSD Rakesh",
                         locale: locale,
-                        webUserEmail: "homer.simpson@computacenter-test.com"
+                        custName: "BASF",
+                        language: "es-US",
+                        reasonCode: "CHAT",
+                        country: "US",
+                        webUserEmail: "rakesh.patel@computacenter.com"
                     }
                 }
             });
@@ -89,9 +93,10 @@
         <option value="en-GB">English (UK)</option>
         <option value="fr-FR">Français (FR)</option>
         <option value="de-DE">Deutsch (DE)</option>
+        <option value="es-US">Latam North (es-US)</option>
     </select>
     <header>
-        <h1>Web Messaging Testing</h1>
+        <h1>Web Messaging Testing Rakesh</h1>
     </header>
 </body>
 </html>
